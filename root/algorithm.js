@@ -293,7 +293,7 @@ function tradVehicCarbon(fuelType, avgMPG, milesDriven){
 }
 
 //Algorithm for Electrical Reigon Anlaysis
-function electricalRegCarbon(region, amntKwh, hours){
+function electricalRegCarbon(region, hours){
     //reigon defined by sub-acroynm refer to the egrid spreadsheet
     switch(region){
         case "AK":

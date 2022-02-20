@@ -79,6 +79,7 @@ var currentPage = "main";
                             d("dashboard-wrap").style.visibility = "hidden";
                             d(e.target.closest(".dashboard-center-button").getAttribute("type") + "-wrap").style.transform = "translate(-50%, -50%)";
                             d(e.target.closest(".dashboard-center-button").getAttribute("type") + "-wrap").style.opacity = 1;
+                            d(e.target.closest(".dashboard-center-button").getAttribute("type") + "-wrap").style.visibility = "visible";
                             currentPage = e.target.closest(".dashboard-center-button").getAttribute("type");
                             $(document).on('change', 'input', function () {
                                 var options;
@@ -124,7 +125,13 @@ var currentPage = "main";
                             });
                             switch (e.target.closest(".dashboard-center-button").getAttribute("type")) {
                                 case "electric":
-
+                                    d("electric-button").addEventListener("click", function() {
+                                        if (d("electric-location").value !== "" && d("electric-hours").value !== "") {
+                                            console.log(electricalRegCarbon(d("electric-location").value, d("electric-hours").value))
+                                        } else {
+                                            alert("Please enter all fields");
+                                        }
+                                    })
                                     break;
                                 case "vehicle":
                                     $.ajax({

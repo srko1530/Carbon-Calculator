@@ -70,7 +70,39 @@
   </div>
   <div class="wrap-wrap">
     <div id="electric-wrap" class="input-wrap">
-
+      <div class="electric-wrap-center">
+        <h1>Electricity Consumption Carbon Footprint</h1>
+        <p>Residential electricity use in 2019 emitted over 9% of the United States total carbon emissions. Household
+          appliances such as refrigerators, washing/drying machines, and space heating/cooling emit large amounts of CO2
+          into the atmosphere each day. Switching to cold water washes for clothes and implementing heat pumps or water
+          coolers can help reduce your carbon footprint.</p>
+        <input type="text" list="electric-list" id="electric-location" placeholder="Location" name="location" required
+          minlength="4">
+        <datalist id="electric-list">
+          <option value="AK"></option>
+          <option value="AZN/NM"></option>
+          <option value="CA"></option>
+          <option value="TEX"></option>
+          <option value="FL"></option>
+          <option value="HI"></option>
+          <option value="ND/SD/NE/IA/MN/MI/WI"></option>
+          <option value="ME/NH/VT/MA/RI/CT"></option>
+          <option value="WA/OR/NV/UT/IO/MT"></option>
+          <option value="NY"></option>
+          <option value="PA/NJ/DE/MD"></option>
+          <option value="IND/OH/WV"></option>
+          <option value="CO/WY"></option>
+          <option value="KA/OK"></option>
+          <option value="MIS/IO"></option>
+          <option value="AK/LA"></option>
+          <option value="MISS/AL/GA"></option>
+          <option value="KEN/TN"></option>
+          <option value="VA/NC/SC"></option>
+        </datalist>
+        <input type="text" id="electric-hours" placeholder="Hours" name="hours" required
+          minlength="4">
+        <button id="electric-button">Calculate</button>
+      </div>
     </div>
     <div id="vehicle-wrap" class="input-wrap">
       <div class="vehicle-wrap-center">
