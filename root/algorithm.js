@@ -300,96 +300,115 @@ function electricalRegCarbon(region, hours){
             totalMetricTonKw = 0.740126066 ;
             pop = 734323;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "AZN/NM":
             totalMetricTonKw = 0.384010987 ;
             pop = 7276316 + 2115877;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "CA":
             totalMetricTonKw = 0.232919492;
             pop = 39237836;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "TEX":
             totalMetricTonKw = 0.371301411;
             pop =  29527941;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "FL":
             totalMetricTonKw = 0.379794679;
             pop = 21781128;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "HI":
             totalMetricTonKw = 1.26833395;
             pop = 1441553;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "ND/SD/NE/IA/MN/MI/WI":
             totalMetricTonKw = 1.659693128;
             pop: 774948 + 3193079 + 19636902 + 6805985 + 5707390 + 10050811 + 5895908;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "ME/NH/VT/MA/RI/CT":
             totalMetricTonKw =0.2395872934 ;
             pop: 1372247 + 1388992 + 645570 + 6984723 + 1095610 + 3605597;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break
         case "WA/OR/NV/UT/IO/MT":
             totalMetricTonKw = 0.2721552;
             pop = 7738692 + 4246155 + 3143991 + 3337975 + 1900923 + 1104271;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "NY":
             totalMetricTonKw = 0.939842624
             pop = 20201249;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "PA/NJ/DE/MD":
             totalMetricTonKw = 0.29596878;
             pop = 12964056 + 288994 + 1003384 + 6177224;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "IND/OH/WV":
             totalMetricTonKw = 0.44678812;
             pop = 6805985 + 11799448 + 1793716;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "CO/WY":
             totalMetricTonKw = .519272122;
             pop = 5812069 + 578803;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "KA/OK":
             totalMetricTonKw = 0.432726768
             pop = 2934582 + 3986639; 
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break
         case "MIS/IO":
             totalMetricTonKw = 0.671633674;
             pop = 6168187 + 12671469;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "AK/LA":
             totalMetricTonKw = 0.335839517;
             pop = 3025891 + 4624047; 
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "MISS/AL/GA":
             totalMetricTonKw =0.390179838;
             pop = 2949965 + 5039877 + 10799566
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "KEN/TN":
             totalMetricTonKw = 0.378386446;
             pop = 4509394 + 6975218;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
         case "VA/NC/SC":
             totalMetricTonKw = 0.282633175;
             pop = 8642274 + 10551162 + 5190705;
             carbonTon = (totalMetricTonKw/pop) *hours;
+            return carbonTon;
         break;
     }
 }
