@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link href="index.css" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="http://www.carqueryapi.com/js/carquery.0.3.4.js"></script>
+  <script src="algorithm.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div id="title-wrap">
+    <h1 class="title">Carbon Calculator</h1>
+    <div class="title-row">
+      <img src="Assets/logo.png" class="title-logo" />
+      <input type="email" id="email" placeholder="Email" name="email" required minlength="4">
+      <button id="title-button">Continue</button>
+    </div>
+  </div>
+  <div id="loading-wrap">
+    <h1 class="loading-title">loading...</h1>
+    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_bmczcmpx.json" background="transparent" speed="1"
+      style="width: 300px; height: 200px;" loop autoplay></lottie-player>
+  </div>
+  <div id="dashboard-wrap">
+    <div class="dashboard-topBG"></div>
+    <div class="dashboard-center">
+      <h1 class="dashboard-center-title">What would you like to calculate?</h1>
+      <div class="dashboard-center-buttonWrap">
+        <div class="dashboard-center-button" type="electric">
+          <div class="dashboard-center-button-text">
+            electrical carbon footprint
+          </div>
+        </div>
+        <div class="dashboard-center-button" type="vehicle">
+          <div class="dashboard-center-button-text">
+            vehicular carbon footprint
+          </div>
+        </div>
+        <div class="dashboard-center-button" type="food">
+          <div class="dashboard-center-button-text">
+            food based carbon footprint
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="dashboard-nav">
+    <ul class="dashboard-nav-list">
+      <li><a href="#" link="home">Home</a></li>
+      <li><a href="#" link="electrical">Electrical</a></li>
+      <li>
+        <h1 class="dashboard-nav-title" class="dashboard-nav-link">Carbon Calculator</h1>
+      </li>
+      <li><a href="#" link="vehicle">Vehicle</a></li>
+      <li><a href="#" link="food">Food</a></li>
+    </ul>
+  </div>
+  <div class="wrap-wrap">
+    <div id="electric-wrap" class="input-wrap">
+
+    </div>
+    <div id="vehicle-wrap" class="input-wrap">
+      <div class="vehicle-wrap-center">
+        <h1>Vehicular Carbon Footprint</h1>
+        <input type="text" list="vehicle-makes" id="vehicle-makes-input" placeholder="Make" name="makes" required
+          disabled minlength="4">
+        <datalist id="vehicle-makes"></datalist>
+        <input type="text" list="vehicle-models" id="vehicle-models-input" placeholder="Model" name="models" required
+          disabled minlength="4">
+        <datalist id="vehicle-models"></datalist>
+        <input type="text" id="vehicle-years-input" placeholder="Year" name="years" required disabled minlength="4"
+          maxlength="4">
+        <br>
+        <input type="text" id="vehicle-miles-driven" placeholder="Miles Driven" name="miles-driven" required>
+        <select id="fueltype">
+          <option value="Gasoline" selected>Gasoline</option>
+          <option value="Diesel">Diesel</option>
+        </select>
+        <br>
+        <button id="vehicle-button">Calculate</button>
+      </div>
+    </div>
+    <div id="food-wrap" class="input-wrap">
+
+    </div>
+  </div>
+  <img id="bottomBanner" src="Assets/bottomBanner.png" />
+</body>
+
+</html>

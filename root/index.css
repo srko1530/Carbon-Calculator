@@ -1,0 +1,307 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #d9d9d9;
+    overflow: hidden;
+}
+
+input {
+    border: 3px #6b7530 solid;
+    background-color: #bcbfbb;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+select {
+    border: 3px #6b7530 solid;
+    background-color: #bcbfbb;
+    border-radius: 7px;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.title {
+    font-size: 55px;
+    margin: 0;
+    font-family: "Orbitron";
+    text-align: center;
+    color: #422c1e;
+}
+
+#title-wrap {
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+}
+
+.title-row {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-logo {
+    display: inline-block;
+    height: 300px;
+    vertical-align: middle;
+}
+
+#title-button {
+    display: inline-block;
+    border: 0;
+    padding: 15px;
+    background-color: #6b7530;
+    vertical-align: middle;
+    font-family: "Orbitron";
+    color: #dae8aa;
+    font-size: 15px;
+    border-radius: 7px;
+    white-space: normal;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#title-button:hover {
+    cursor: pointer;
+}
+
+#loading-wrap {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 50;
+}
+
+.loading-title {
+    margin: 0;
+    font-family: "Orbitron";
+    text-align: center;
+    color: #422c1e;
+}
+
+#dashboard-wrap {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 25;
+}
+
+.dashboard-topBG {
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    background-image: url("Assets/background.png");
+    background-size: cover;
+}
+
+#dashboard-nav {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    transform: translateY(-60px);
+    background-color: #6b7530;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dashboard-nav-list {
+    margin: 0;
+    padding-left: 0px;
+    text-align: center;
+    height: 100%;
+}
+
+.dashboard-nav-list > li {
+    display: inline-block;
+    padding: 0px 20px;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 60px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-nav-list > li:hover {
+    background-color: #4e5524;
+}
+
+.dashboard-nav-list > li > a {
+    position: relative;
+    color: #dae8aa;
+    text-decoration: none;
+    font-family: "Merriweather";
+}
+
+.dashboard-nav-title {
+    display: inline-block;
+    font-family: "Orbitron";
+    margin: 0;
+    color: #dae8aa;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+.dashboard-nav-link {
+    display: inline;
+}
+
+.dashboard-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 60%;
+}
+
+.dashboard-center-title {
+    font-family: "Merriweather";
+    color: #422c1e;
+    text-align: center;
+    font-size: 45px;
+}
+
+.dashboard-center-buttonWrap {
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard-center-button {
+    display: inline-block;
+    margin: 0px 5px;
+    width: 25%;
+    height: 300px;
+    background-color: #6b7530;
+    border-radius: 10px;
+    vertical-align: middle;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.dashboard-center-button:hover {
+    cursor: pointer;
+}
+
+#dashboard-center-dashboardButton {
+    margin: auto;
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: #6b7530;
+    border-radius: 10px;
+    vertical-align: middle;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#dashboard-center-dashboardButton:hover {
+    cursor: pointer;
+}
+
+.dashboard-center-button-text {
+    position: relative;
+    height: 50%;
+    bottom: 0;
+    color: #dae8aa;
+    font-family: "Orbitron";
+}
+
+.wrap-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.input-wrap {
+    background-image: url("Assets/background.png");
+    background-size: cover;
+    transition: visibility 0.3s ease;
+}
+
+#electric-wrap {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+#vehicle-wrap {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+}
+
+.vehicle-wrap-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: #d9d9d9;
+}
+
+.vehicle-wrap-center > h1 {
+    margin-top: 0;
+    font-family: "Merriweather";
+    color: #422c1e;
+    text-align: left;
+    font-size: 45px;
+}
+
+#vehicle-button {
+    display: inline-block;
+    border: 0;
+    padding: 15px;
+    background-color: #6b7530;
+    vertical-align: middle;
+    font-family: "Orbitron";
+    color: #dae8aa;
+    font-size: 15px;
+    border-radius: 7px;
+    white-space: normal;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#vehicle-button:hover {
+    cursor: pointer;
+}
+
+#bottomBanner {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    transition: transform 0.3s ease;
+}
