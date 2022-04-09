@@ -127,7 +127,7 @@ var currentPage = "main";
                                 case "electric":
                                     d("electric-button").addEventListener("click", function() {
                                         if (d("electric-location").value !== "" && d("electric-hours").value !== "") {
-                                            alert("You emitted " electricalRegCarbon(d("electric-location").value, d("electric-hours").value))
+                                            alert("You emitted: " + electricalRegCarbon(d("electric-location").value, d("electric-hours").value) + " Carbon Tons.")
                                         } else {
                                             alert("Please enter all fields");
                                         }
